@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="icon" type="image/png" sizes="32x32" href="./images/wristLogo.png">
+    <title>Wrist&Neck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./input.css" />
+    <script src="./login.js"></script>
+  </head>
+  <body>
+    <div  id="loginForm" class="modal">
+      <form class="" action="/action_page.php" method="post">
+        <div class="modal-content animate">
+          <div class="imgcontainer">
+            <a href="./index.html">
+              <span
+                onclick="document.getElementById('loginModal').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+            </a>
+            <a href="./index.html" class="mainLogo">WristnNeck</a>
+          </div>
+          <div class="formContainer">
+            <div>
+              <label for="email"><b>Email</b></label>
+              <input
+                type="email"
+                placeholder="Enter Email"
+                name="email"
+                required
+              />
+            </div>
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              required
+            />
+
+            <button type="submit" class="Loginbutton">Login</button>
+            <div class="createAccount">
+              <a
+                href="./createAccount.html"
+                onclick="document.getElementById('signUpModal').style.display='block'"
+                style="width: auto"
+                >Create Account</a
+              >
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
